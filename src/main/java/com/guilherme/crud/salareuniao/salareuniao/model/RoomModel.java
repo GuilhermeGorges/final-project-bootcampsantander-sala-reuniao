@@ -33,4 +33,14 @@ public class RoomModel {
     @Column(name="endHour", nullable = false)
     private String endHour;
 
+    @Override
+    public String toString() {
+        return "RoomModel[" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", date='" + date + '\'' +
+                ", startHour='" + startHour + '\'' +
+                ", endHour='" + endHour + '\'' +
+                ']';
+    }
 }
